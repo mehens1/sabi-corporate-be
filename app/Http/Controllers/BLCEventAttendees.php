@@ -49,7 +49,7 @@ class BLCEventAttendees extends Controller
             'will_you_recommend_someone' => 'required|boolean',
             'topic_you_want_us_to_discuss' => 'required|string',
             'suggets_speaker' => 'required|string',
-            'suggest_improvement' => 'required|string',
+            'suggest_improvement_for_future_event' => 'required|string',
 
             // Marketing table
             'how_did_you_hear_about_us' => 'required|string',
