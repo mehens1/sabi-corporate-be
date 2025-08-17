@@ -48,7 +48,8 @@ class BLCEventAttendees extends Controller
             'want_to_volunteer' => 'required|in:Yes,No,Not Sure',
             'will_you_recommend_someone' => 'required|boolean',
             'topic_you_want_us_to_discuss' => 'required|string',
-            'suggest_improvement_for_future_event' => 'required|string',
+            'suggets_speaker' => 'required|string',
+            'suggest_improvement' => 'required|string',
 
             // Marketing table
             'how_did_you_hear_about_us' => 'required|string',

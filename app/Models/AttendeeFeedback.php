@@ -17,6 +17,7 @@ class AttendeeFeedback extends Model
         'attend_before',
         'want_to_volunteer',
         'will_you_recommend_someone',
+        'suggest_speaker',
         'topic_you_want_us_to_discuss',
         'suggest_improvement_for_future_event',
     ];
