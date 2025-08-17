@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\BLCAttendee;
-use App\Models\BLCEventAttendance;
+use App\Models\BlcAttendee;
+use App\Models\BlcEventAttendance;
 use App\Models\AttendeeFeedback;
 use App\Models\AttendeeMarketingAndOutreach;
 use Carbon\Carbon;
