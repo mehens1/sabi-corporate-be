@@ -36,4 +36,9 @@ class BlcAttendee extends Model
     {
         return $this->hasMany(AttendeeMarketingAndOutreach::class, 'attendee_id');
     }
+
+    public function payment()
+    {
+        return $this->hasMany(Payment::class, 'payment_made_by');
+    }
 }

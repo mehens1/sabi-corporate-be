@@ -16,4 +16,9 @@ class Payment extends Model
         'payment_confirmed_at',
         'confirmation_sent_at',
     ];
+
+    public function confirmedBy()
+    {
+        return $this->belongsTo(User::class, 'payment_confirmed_by');
+    }
 }

@@ -16,7 +16,7 @@ class BLCEventAttendees extends Controller
 {
     public function index()
     {
-        $allAttendees = BLCAttendee::with(['attendance', 'feedback', 'marketing'])->get();
+        $allAttendees = BLCAttendee::with(['attendance', 'feedback', 'marketing', 'payment.confirmedBy'])->get();
 
         return response()->json([
             'status' => 'success',
