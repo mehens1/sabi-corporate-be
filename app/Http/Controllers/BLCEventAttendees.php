@@ -20,7 +20,7 @@ class BLCEventAttendees extends Controller
 
         return response()->json([
             'status' => 'success',
-            'message' => 'Attendee fetched successfully',
+            'message' => 'Attendees fetched successfully',
             'data' => $allAttendees,
         ], 200);
     }
@@ -144,5 +144,18 @@ class BLCEventAttendees extends Controller
 
             ], 500);
         }
+    }
+
+    public function show($id)
+    {
+        $attendees = BLCAttendee::where('id', $id)
+            ->with(['attendance', 'feedback', 'marketing', 'payment.confirmedBy'])
+            ->get();
+
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Attendee fetched successfully',
+            'data' => $attendees,
+        ], 200);
     }
 }

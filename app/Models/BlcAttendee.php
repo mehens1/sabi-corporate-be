@@ -39,6 +39,6 @@ class BlcAttendee extends Model
 
     public function payment()
     {
-        return $this->hasMany(Payment::class, 'payment_made_by');
+        return $this->hasOne(Payment::class, 'payment_made_by');
     }
 }
